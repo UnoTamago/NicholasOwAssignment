@@ -103,10 +103,9 @@ module.exports = {
         delete this.staff[staffs];
         console.log(`staff has been deleted!`);
         return;
-    }
-    }
+        }
+    }// if id isnt able to be found and deleted
         console.log("Staff ID does not exist.");
     }
-    
     
 }
