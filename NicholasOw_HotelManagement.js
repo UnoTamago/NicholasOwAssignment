@@ -96,15 +96,15 @@ module.exports = {
     
     //delete staff using ID
     deleteStaff(staffID) {
-        //for the records in staff arry
-        for (let staffs in this.staff) {
-            //checks for the staff id record and then delets them
-            if (this.staff[staffs].staffID === staffID) {
-                delete this.staff[staffs];
-                console.log(`staff has been deleted!`);
-                return;
-            }
-        }
+    //for the records in staff arry
+    for (let staffs in this.staff) {
+    //checks for the staff id record and then delets them
+    if (this.staff[staffs].staffID === staffID) {
+        delete this.staff[staffs];
+        console.log(`staff has been deleted!`);
+        return;
+    }
+    }
         console.log("Staff ID does not exist.");
     }
     
